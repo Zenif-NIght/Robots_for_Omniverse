@@ -97,17 +97,17 @@ def Xform "go1" (
         {
         }
 
-        def PhysicsFixedJoint "FL_foot_fixed"
-        {
-            rel physics:body0 = </go1/FL_calf>
-            rel physics:body1 = </go1/FL_foot>
-            float physics:breakForce = 3.4028235e38
-            float physics:breakTorque = 3.4028235e38
-            point3f physics:localPos0 = (0, 0, -0.213)
-            point3f physics:localPos1 = (0, 0, 0)
-            quatf physics:localRot0 = (1, 0, 0, 0)
-            quatf physics:localRot1 = (1, 0, 0, 0)
-        }
+        # def PhysicsFixedJoint "FL_foot_fixed"
+        # {
+        #     rel physics:body0 = </go1/FL_calf>
+        #     rel physics:body1 = </go1/FL_foot>
+        #     float physics:breakForce = 3.4028235e38
+        #     float physics:breakTorque = 3.4028235e38
+        #     point3f physics:localPos0 = (0, 0, -0.213)
+        #     point3f physics:localPos1 = (0, 0, 0)
+        #     quatf physics:localRot0 = (1, 0, 0, 0)
+        #     quatf physics:localRot1 = (1, 0, 0, 0)
+        # }
     }
 
     def Xform "FL_foot" (
@@ -243,17 +243,17 @@ def Xform "go1" (
         {
         }
 
-        def PhysicsFixedJoint "FR_foot_fixed"
-        {
-            rel physics:body0 = </go1/FR_calf>
-            rel physics:body1 = </go1/FR_foot>
-            float physics:breakForce = 3.4028235e38
-            float physics:breakTorque = 3.4028235e38
-            point3f physics:localPos0 = (0, 0, -0.213)
-            point3f physics:localPos1 = (0, 0, 0)
-            quatf physics:localRot0 = (1, 0, 0, 0)
-            quatf physics:localRot1 = (1, 0, 0, 0)
-        }
+        # def PhysicsFixedJoint "FR_foot_fixed"
+        # {
+        #     rel physics:body0 = </go1/FR_calf>
+        #     rel physics:body1 = </go1/FR_foot>
+        #     float physics:breakForce = 3.4028235e38
+        #     float physics:breakTorque = 3.4028235e38
+        #     point3f physics:localPos0 = (0, 0, -0.213)
+        #     point3f physics:localPos1 = (0, 0, 0)
+        #     quatf physics:localRot0 = (1, 0, 0, 0)
+        #     quatf physics:localRot1 = (1, 0, 0, 0)
+        # }
     }
 
     def Xform "FR_foot" (
@@ -389,17 +389,17 @@ def Xform "go1" (
         {
         }
 
-        def PhysicsFixedJoint "RL_foot_fixed"
-        {
-            rel physics:body0 = </go1/RL_calf>
-            rel physics:body1 = </go1/RL_foot>
-            float physics:breakForce = 3.4028235e38
-            float physics:breakTorque = 3.4028235e38
-            point3f physics:localPos0 = (0, 0, -0.213)
-            point3f physics:localPos1 = (0, 0, 0)
-            quatf physics:localRot0 = (1, 0, 0, 0)
-            quatf physics:localRot1 = (1, 0, 0, 0)
-        }
+        # def PhysicsFixedJoint "RL_foot_fixed"
+        # {
+        #     rel physics:body0 = </go1/RL_calf>
+        #     rel physics:body1 = </go1/RL_foot>
+        #     float physics:breakForce = 3.4028235e38
+        #     float physics:breakTorque = 3.4028235e38
+        #     point3f physics:localPos0 = (0, 0, -0.213)
+        #     point3f physics:localPos1 = (0, 0, 0)
+        #     quatf physics:localRot0 = (1, 0, 0, 0)
+        #     quatf physics:localRot1 = (1, 0, 0, 0)
+        # }
     }
 
     def Xform "RL_foot" (
@@ -535,17 +535,17 @@ def Xform "go1" (
         {
         }
 
-        def PhysicsFixedJoint "RR_foot_fixed"
-        {
-            rel physics:body0 = </go1/RR_calf>
-            rel physics:body1 = </go1/RR_foot>
-            float physics:breakForce = 3.4028235e38
-            float physics:breakTorque = 3.4028235e38
-            point3f physics:localPos0 = (0, 0, -0.213)
-            point3f physics:localPos1 = (0, 0, 0)
-            quatf physics:localRot0 = (1, 0, 0, 0)
-            quatf physics:localRot1 = (1, 0, 0, 0)
-        }
+        # def PhysicsFixedJoint "RR_foot_fixed"
+        # {
+        #     rel physics:body0 = </go1/RR_calf>
+        #     rel physics:body1 = </go1/RR_foot>
+        #     float physics:breakForce = 3.4028235e38
+        #     float physics:breakTorque = 3.4028235e38
+        #     point3f physics:localPos0 = (0, 0, -0.213)
+        #     point3f physics:localPos1 = (0, 0, 0)
+        #     quatf physics:localRot0 = (1, 0, 0, 0)
+        #     quatf physics:localRot1 = (1, 0, 0, 0)
+        # }
     }
 
     def Xform "RR_foot" (
