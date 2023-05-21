@@ -97,17 +97,17 @@ def Xform "go1" (
         {
         }
 
-        # def PhysicsFixedJoint "FL_foot_fixed"
-        # {
-        #     rel physics:body0 = </go1/FL_calf>
-        #     rel physics:body1 = </go1/FL_foot>
-        #     float physics:breakForce = 3.4028235e38
-        #     float physics:breakTorque = 3.4028235e38
-        #     point3f physics:localPos0 = (0, 0, -0.213)
-        #     point3f physics:localPos1 = (0, 0, 0)
-        #     quatf physics:localRot0 = (1, 0, 0, 0)
-        #     quatf physics:localRot1 = (1, 0, 0, 0)
-        # }
+        def PhysicsFixedJoint "FL_foot_fixed"
+        {
+            rel physics:body0 = </go1/FL_calf>
+            rel physics:body1 = </go1/FL_foot>
+            float physics:breakForce = 3.4028235e38
+            float physics:breakTorque = 3.4028235e38
+            point3f physics:localPos0 = (0, 0, -0.213)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
     }
 
     def Xform "FL_foot" (
@@ -243,17 +243,17 @@ def Xform "go1" (
         {
         }
 
-        # def PhysicsFixedJoint "FR_foot_fixed"
-        # {
-        #     rel physics:body0 = </go1/FR_calf>
-        #     rel physics:body1 = </go1/FR_foot>
-        #     float physics:breakForce = 3.4028235e38
-        #     float physics:breakTorque = 3.4028235e38
-        #     point3f physics:localPos0 = (0, 0, -0.213)
-        #     point3f physics:localPos1 = (0, 0, 0)
-        #     quatf physics:localRot0 = (1, 0, 0, 0)
-        #     quatf physics:localRot1 = (1, 0, 0, 0)
-        # }
+        def PhysicsFixedJoint "FR_foot_fixed"
+        {
+            rel physics:body0 = </go1/FR_calf>
+            rel physics:body1 = </go1/FR_foot>
+            float physics:breakForce = 3.4028235e38
+            float physics:breakTorque = 3.4028235e38
+            point3f physics:localPos0 = (0, 0, -0.213)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
     }
 
     def Xform "FR_foot" (
@@ -389,17 +389,17 @@ def Xform "go1" (
         {
         }
 
-        # def PhysicsFixedJoint "RL_foot_fixed"
-        # {
-        #     rel physics:body0 = </go1/RL_calf>
-        #     rel physics:body1 = </go1/RL_foot>
-        #     float physics:breakForce = 3.4028235e38
-        #     float physics:breakTorque = 3.4028235e38
-        #     point3f physics:localPos0 = (0, 0, -0.213)
-        #     point3f physics:localPos1 = (0, 0, 0)
-        #     quatf physics:localRot0 = (1, 0, 0, 0)
-        #     quatf physics:localRot1 = (1, 0, 0, 0)
-        # }
+        def PhysicsFixedJoint "RL_foot_fixed"
+        {
+            rel physics:body0 = </go1/RL_calf>
+            rel physics:body1 = </go1/RL_foot>
+            float physics:breakForce = 3.4028235e38
+            float physics:breakTorque = 3.4028235e38
+            point3f physics:localPos0 = (0, 0, -0.213)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
     }
 
     def Xform "RL_foot" (
@@ -535,17 +535,17 @@ def Xform "go1" (
         {
         }
 
-        # def PhysicsFixedJoint "RR_foot_fixed"
-        # {
-        #     rel physics:body0 = </go1/RR_calf>
-        #     rel physics:body1 = </go1/RR_foot>
-        #     float physics:breakForce = 3.4028235e38
-        #     float physics:breakTorque = 3.4028235e38
-        #     point3f physics:localPos0 = (0, 0, -0.213)
-        #     point3f physics:localPos1 = (0, 0, 0)
-        #     quatf physics:localRot0 = (1, 0, 0, 0)
-        #     quatf physics:localRot1 = (1, 0, 0, 0)
-        # }
+        def PhysicsFixedJoint "RR_foot_fixed"
+        {
+            rel physics:body0 = </go1/RR_calf>
+            rel physics:body1 = </go1/RR_foot>
+            float physics:breakForce = 3.4028235e38
+            float physics:breakTorque = 3.4028235e38
+            point3f physics:localPos0 = (0, 0, -0.213)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
     }
 
     def Xform "RR_foot" (
@@ -1267,9 +1267,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1281,8 +1281,8 @@ def Xform "go1" (
             point3f physics:localPos1 = (0, 0, 0)
             quatf physics:localRot0 = (1, 0, 0, 0)
             quatf physics:localRot1 = (1, 0, 0, 0)
-            float physics:lowerLimit = -49.446255
-            float physics:upperLimit = 49.446255
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
             float physxJoint:jointFriction = 0.2
             float physxJoint:maxJointVelocity = 1724.603
             float state:angular:physics:position = 0
@@ -1293,9 +1293,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1307,8 +1307,8 @@ def Xform "go1" (
             point3f physics:localPos1 = (0, 0, 0)
             quatf physics:localRot0 = (1, 0, 0, 0)
             quatf physics:localRot1 = (1, 0, 0, 0)
-            float physics:lowerLimit = -49.446255
-            float physics:upperLimit = 49.446255
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
             float physxJoint:jointFriction = 0.2
             float physxJoint:maxJointVelocity = 1724.603
             float state:angular:physics:position = 0
@@ -1319,9 +1319,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1333,8 +1333,8 @@ def Xform "go1" (
             point3f physics:localPos1 = (0, 0, 0)
             quatf physics:localRot0 = (1, 0, 0, 0)
             quatf physics:localRot1 = (1, 0, 0, 0)
-            float physics:lowerLimit = -49.446255
-            float physics:upperLimit = 49.446255
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
             float physxJoint:jointFriction = 0.2
             float physxJoint:maxJointVelocity = 1724.603
             float state:angular:physics:position = 0
@@ -1345,9 +1345,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1359,8 +1359,8 @@ def Xform "go1" (
             point3f physics:localPos1 = (0, 0, 0)
             quatf physics:localRot0 = (1, 0, 0, 0)
             quatf physics:localRot1 = (1, 0, 0, 0)
-            float physics:lowerLimit = -49.446255
-            float physics:upperLimit = 49.446255
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
             float physxJoint:jointFriction = 0.2
             float physxJoint:maxJointVelocity = 1724.603
             float state:angular:physics:position = 0
@@ -1410,9 +1410,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1475,9 +1475,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1540,9 +1540,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1605,9 +1605,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 23.7
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1670,9 +1670,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 35.55
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1735,9 +1735,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 35.55
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1800,9 +1800,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 35.55
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -1865,9 +1865,9 @@ def Xform "go1" (
             prepend apiSchemas = ["PhysxJointAPI", "PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
         )
         {
-            float drive:angular:physics:damping = 10000000
+            float drive:angular:physics:damping
             float drive:angular:physics:maxForce = 35.55
-            float drive:angular:physics:stiffness = 0
+            float drive:angular:physics:stiffness
             float drive:angular:physics:targetVelocity = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
