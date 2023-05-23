@@ -1,0 +1,25 @@
+,PPC, OMNI_GYM
+1, LF_HAA, FL_hip_joint 
+2, LH_HAA, RL_hip_joint
+3, RF_HAA, FR_hip_joint
+4, RH_HAA, RR_hip_joint
+5, LF_HFE, FL_thigh_joint
+6, LH_HFE, RL_thigh_joint
+7, RF_HFE, FR_thigh_joint
+8, RH_HFE, RR_thigh_joint
+9, LF_KFE, FL_calf_joint
+10,LH_KFE, RL_calf_joint
+11,RF_KFE, FR_calf_joint
+12,RH_KFE, RR_calf_joint
+
+
+
+
+
+
+
+
+
+
+
+
